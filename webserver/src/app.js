@@ -99,10 +99,3 @@ app.get('*', (req, res) => {
 app.listen(8000, () => {
     console.log('Server is up on port 8000.')
 })
-forecast(37.8267, -122.4233, (error, data) => {
-    if (error) {
-        console.log(error)
-    } else {
-        console.log(data)
-    }
-})
